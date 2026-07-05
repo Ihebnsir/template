@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageFavoritesTitle">Favoris | SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">SkillBridge</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html" data-i18n="navHome">Accueil</a>
+          <a href="recherche.html" data-i18n="navCourses">Formations</a>
+          <a href="favoris.html" class="active" data-i18n="navFavorites">Favoris</a>
+          <a href="connexion.html" data-i18n="navLogin">Connexion</a>
+          <div class="nav-tools">
+            <label class="lang-switch"><select id="language-select"><option value="fr">FR</option><option value="en">EN</option><option value="ar">عربي</option></select></label>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le mode sombre">☀️</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="section-heading">
+        <div>
+          <span class="section-label" data-i18n="favoritesLabel">Favoris</span>
+          <h2 data-i18n="favoritesTitle">Vos formations sauvegardées</h2>
+        </div>
+      </div>
+      <div id="favorites-list" class="card-grid"></div>
+    </main>
+
+    <div id="compare-bar" class="compare-bar" style="display:none;">
+      <div id="compare-items" class="compare-bar-items"></div>
+      <a id="compare-link" href="comparateur.html" class="btn btn-primary" data-i18n="compareNow">Comparer maintenant</a>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

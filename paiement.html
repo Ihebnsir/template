@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pagePaymentTitle">Paiement | SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">SkillBridge</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html" data-i18n="navHome">Accueil</a>
+          <a href="recherche.html" data-i18n="navCourses">Formations</a>
+          <a href="chat.html" data-i18n="navMessages">Messages</a>
+          <a href="connexion.html" data-i18n="navLogin">Connexion</a>
+          <div class="nav-tools">
+            <label class="lang-switch"><select id="language-select"><option value="fr">FR</option><option value="en">EN</option><option value="ar">عربي</option></select></label>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le mode sombre">☀️</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container payment-page">
+      <section class="payment-methods">
+        <div class="section-heading">
+          <div>
+            <span class="section-label" data-i18n="paymentMethodsLabel">Paiement sécurisé</span>
+            <h2 data-i18n="paymentMethodsTitle">Choisissez votre moyen de paiement</h2>
+          </div>
+        </div>
+        <div class="payment-options">
+          <button class="payment-card active" type="button" data-method="tunisian">
+            <span class="payment-icon">💳</span>
+            <h3 data-i18n="paymentTunisian">Carte bancaire tunisienne</h3>
+            <p data-i18n="paymentTunisianText">Visa / Mastercard émises par BIAT, BNA, Attijari ou STB</p>
+          </button>
+          <button class="payment-card" type="button" data-method="edinar">
+            <span class="payment-icon">🔐</span>
+            <h3>e-DINAR</h3>
+            <p data-i18n="paymentEdinarText">Paiement via Poste Tunisienne</p>
+          </button>
+          <button class="payment-card" type="button" data-method="international">
+            <span class="payment-icon">🌍</span>
+            <h3 data-i18n="paymentInternational">Carte internationale</h3>
+            <p data-i18n="paymentInternationalText">Visa ou Mastercard classique</p>
+          </button>
+        </div>
+      </section>
+
+      <section class="card payment-form-card reveal">
+        <div class="secure-badge"><span>🔒</span> <span data-i18n="paymentSecure">Paiement sécurisé</span></div>
+        <form class="auth-form payment-form">
+          <div class="payment-logo" id="payment-logo">💳</div>
+          <label for="card-number" data-i18n="paymentCardNumber">Numéro de carte</label>
+          <input id="card-number" type="text" placeholder="4242 4242 4242 4242" />
+          <div class="form-grid">
+            <div>
+              <label for="expiry" data-i18n="paymentExpiry">Date d’expiration</label>
+              <input id="expiry" type="text" placeholder="MM/AA" />
+            </div>
+            <div>
+              <label for="cvv" data-i18n="paymentCvv">CVV</label>
+              <input id="cvv" type="text" placeholder="123" />
+            </div>
+          </div>
+          <label for="name" data-i18n="paymentHolder">Nom du titulaire</label>
+          <input id="name" type="text" placeholder="Votre nom" />
+          <button class="btn btn-primary full-width" type="submit" data-i18n="paymentPayButton">Payer 260 DT</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

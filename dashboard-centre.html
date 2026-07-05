@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageDashboardCenterTitle">Dashboard centre | SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <a class="brand brand-sidebar" href="index.html">SkillBridge</a>
+        <nav class="sidebar-nav">
+          <a href="#" class="active" data-i18n="dashboardCenterPrograms">Mes formations</a>
+          <a href="#" data-i18n="dashboardCenterReservations">Réservations</a>
+          <a href="chat.html" data-i18n="dashboardMessages">Messages</a>
+          <a href="#" data-i18n="dashboardCenterStats">Statistiques</a>
+          <a href="#" data-i18n="dashboardProfile">Profil</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <div><span class="section-label" data-i18n="dashboardCenterWelcome">Centre de formation</span><h1>Institut Formatech</h1></div>
+          <a href="index.html" class="btn btn-outline" data-i18n="dashboardBack">Retour au site</a>
+        </header>
+
+        <section class="card dashboard-section">
+          <div class="section-heading">
+            <div><span class="section-label" data-i18n="dashboardReservationsReceived">Réservations reçues</span><h2 data-i18n="dashboardReservationsTitle">Dernières demandes</h2></div>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th data-i18n="tableLearner">Apprenant</th><th data-i18n="tableCourse">Formation</th><th data-i18n="tableDate">Date</th><th data-i18n="tableStatus">Statut</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Clara M.</td><td>IA générative pour débutants</td><td>18 août</td><td><span class="pill" data-i18n="statusConfirmed">Confirmée</span></td></tr>
+                <tr><td>Louis R.</td><td>HTML, CSS & Bootstrap</td><td>22 août</td><td><span class="pill" data-i18n="statusPending">En attente</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

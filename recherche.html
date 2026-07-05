@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageSearchTitle">Recherche de formations | SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">SkillBridge</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html" data-i18n="navHome">Accueil</a>
+          <a href="recherche.html" class="active" data-i18n="navCourses">Formations</a>
+          <a href="chat.html" data-i18n="navMessages">Messages</a>
+          <a href="connexion.html" data-i18n="navLogin">Connexion</a>
+          <div class="nav-tools">
+            <label class="lang-switch"><select id="language-select"><option value="fr">FR</option><option value="en">EN</option><option value="ar">عربي</option></select></label>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le mode sombre">☀️</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container search-page">
+      <aside class="filters-panel card reveal">
+        <h2 data-i18n="filtersTitle">Filtres</h2>
+        <form>
+          <div class="filter-group">
+            <label for="budget" data-i18n="filterBudget">Budget</label>
+            <select id="budget">
+              <option data-i18n="filterBudgetAny">Tous les prix</option>
+              <option>0 - 150 DT</option>
+              <option>150 - 300 DT</option>
+              <option>300 DT+</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="wilaya" data-i18n="filterWilaya">Wilaya</label>
+            <select id="wilaya">
+              <option value="" data-i18n="wilayaAny">Toutes les wilayas</option>
+              <option>Tunis</option><option>Ariana</option><option>Ben Arous</option><option>Manouba</option><option>Nabeul</option><option>Zaghouan</option><option>Bizerte</option><option>Béja</option><option>Jendouba</option><option>Le Kef</option><option>Siliana</option><option>Sousse</option><option>Monastir</option><option>Mahdia</option><option>Sfax</option><option>Kairouan</option><option>Kasserine</option><option>Sidi Bouzid</option><option>Gabès</option><option>Médenine</option><option>Tataouine</option><option>Gafsa</option><option>Tozeur</option><option>Kébili</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="category" data-i18n="filterCategory">Domaine</label>
+            <select id="category">
+              <option data-i18n="filterCategoryAny">Tous les domaines</option>
+              <option data-i18n="catTech">Informatique</option>
+              <option data-i18n="catLangues">Langues</option>
+              <option data-i18n="catDesign">Design</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label data-i18n="filterRating">Note minimum</label>
+            <div class="chip-group"><span class="chip">⭐ 4.5</span><span class="chip">⭐ 4.8</span><span class="chip">⭐ 5.0</span></div>
+          </div>
+          <div class="filter-group">
+            <label><input type="checkbox" /> <span data-i18n="filterAvailable">Disponible maintenant</span></label>
+          </div>
+          <button class="btn btn-primary full-width" type="submit" data-i18n="applyFilters">Appliquer</button>
+        </form>
+      </aside>
+
+      <section class="results-panel">
+        <div class="section-heading">
+          <div>
+            <span class="section-label" data-i18n="resultsLabel">Résultats</span>
+            <h2 data-i18n="resultsTitle">Formations disponibles</h2>
+          </div>
+          <span class="muted" data-i18n="resultsCount">24 formations trouvées</span>
+        </div>
+
+        <div class="results-list">
+          <article class="card result-card reveal">
+            <img src="https://placehold.co/460x280/png?text=IA+Sfax" alt="Formation IA" />
+            <div class="result-content">
+              <div class="card-meta"><span data-i18n="catTech">Informatique</span><span>⭐ 4.9</span></div>
+              <h3 data-i18n="searchResultOneTitle">IA générative pour équipes</h3>
+              <p>Académie SkillPro Sfax • Sfax • 4 semaines</p>
+              <p data-i18n="searchResultOneText">Approfondissez l’IA générative au travers d’ateliers pratiques et d’applications concrètes.</p>
+              <div class="card-actions">
+                <button class="favorite-btn" type="button" data-favorite-id="search-ia" data-favorite-title="IA générative pour équipes" aria-pressed="false">♡</button>
+                <button class="compare-btn" type="button" data-compare-id="search-ia" data-compare-title="IA générative pour équipes" aria-pressed="false">⚖</button>
+              </div>
+              <div class="card-footer"><strong>260 DT</strong><a href="formation-details.html" class="btn btn-outline" data-i18n="viewDetail">Voir la fiche</a></div>
+            </div>
+          </article>
+          <article class="card result-card reveal">
+            <img src="https://placehold.co/460x280/png?text=Anglais+Sousse" alt="Formation anglais" />
+            <div class="result-content">
+              <div class="card-meta"><span data-i18n="catLangues">Langues</span><span>⭐ 4.8</span></div>
+              <h3 data-i18n="searchResultTwoTitle">Anglais professionnel</h3>
+              <p>Centre AlphaLangues • Sousse • 3 semaines</p>
+              <p data-i18n="searchResultTwoText">Un programme de renforcement de la communication orienté métier et environnement professionnel.</p>
+              <div class="card-actions">
+                <button class="favorite-btn" type="button" data-favorite-id="search-ang" data-favorite-title="Anglais professionnel" aria-pressed="false">♡</button>
+                <button class="compare-btn" type="button" data-compare-id="search-ang" data-compare-title="Anglais professionnel" aria-pressed="false">⚖</button>
+              </div>
+              <div class="card-footer"><strong>210 DT</strong><a href="formation-details.html" class="btn btn-outline" data-i18n="viewDetail">Voir la fiche</a></div>
+            </div>
+          </article>
+          <article class="card result-card reveal">
+            <img src="https://placehold.co/460x280/png?text=Design+Monastir" alt="Formation design" />
+            <div class="result-content">
+              <div class="card-meta"><span data-i18n="catDesign">Design</span><span>⭐ 4.7</span></div>
+              <h3 data-i18n="searchResultThreeTitle">UI/UX Design Essentials</h3>
+              <p>Studio Pixel • Monastir • 6 semaines</p>
+              <p data-i18n="searchResultThreeText">Maîtrisez les principes du design d’interface et les bonnes pratiques d’expérience utilisateur.</p>
+              <div class="card-actions">
+                <button class="favorite-btn" type="button" data-favorite-id="search-design" data-favorite-title="UI/UX Design Essentials" aria-pressed="false">♡</button>
+                <button class="compare-btn" type="button" data-compare-id="search-design" data-compare-title="UI/UX Design Essentials" aria-pressed="false">⚖</button>
+              </div>
+              <div class="card-footer"><strong>230 DT</strong><a href="formation-details.html" class="btn btn-outline" data-i18n="viewDetail">Voir la fiche</a></div>
+            </div>
+          </article>
+        </div>
+
+        <nav class="pagination" aria-label="Pagination">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#" data-i18n="nextPage">Suivant</a>
+        </nav>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

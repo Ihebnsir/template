@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageComparatorTitle">Comparateur | SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">SkillBridge</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html" data-i18n="navHome">Accueil</a>
+          <a href="recherche.html" data-i18n="navCourses">Formations</a>
+          <a href="favoris.html" data-i18n="navFavorites">Favoris</a>
+          <a href="connexion.html" data-i18n="navLogin">Connexion</a>
+          <div class="nav-tools">
+            <label class="lang-switch"><select id="language-select"><option value="fr">FR</option><option value="en">EN</option><option value="ar">عربي</option></select></label>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le mode sombre">☀️</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="section-heading">
+        <div>
+          <span class="section-label" data-i18n="compareLabel">Comparateur</span>
+          <h2 data-i18n="compareTitle">Comparez jusqu’à 3 formations</h2>
+        </div>
+      </div>
+      <div class="table-wrapper card">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="compareFeature">Caractéristique</th>
+              <th id="compare-col-1">—</th>
+              <th id="compare-col-2">—</th>
+              <th id="compare-col-3">—</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td data-i18n="comparePrice">Prix</td><td data-compare-value="price">—</td><td data-compare-value="price">—</td><td data-compare-value="price">—</td></tr>
+            <tr><td data-i18n="compareDuration">Durée</td><td data-compare-value="duration">—</td><td data-compare-value="duration">—</td><td data-compare-value="duration">—</td></tr>
+            <tr><td data-i18n="compareLevel">Niveau</td><td data-compare-value="level">—</td><td data-compare-value="level">—</td><td data-compare-value="level">—</td></tr>
+            <tr><td data-i18n="compareCenter">Centre</td><td data-compare-value="center">—</td><td data-compare-value="center">—</td><td data-compare-value="center">—</td></tr>
+            <tr><td data-i18n="compareRating">Note</td><td data-compare-value="rating">—</td><td data-compare-value="rating">—</td><td data-compare-value="rating">—</td></tr>
+            <tr><td data-i18n="compareWilaya">Wilaya</td><td data-compare-value="wilaya">—</td><td data-compare-value="wilaya">—</td><td data-compare-value="wilaya">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

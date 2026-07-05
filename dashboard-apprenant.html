@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageDashboardLearnerTitle">Dashboard apprenant | SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <a class="brand brand-sidebar" href="index.html">SkillBridge</a>
+        <nav class="sidebar-nav">
+          <a href="#" class="active" data-i18n="dashboardOverview">Vue d’ensemble</a>
+          <a href="#" data-i18n="dashboardReservations">Mes réservations</a>
+          <a href="chat.html" data-i18n="dashboardMessages">Messages</a>
+          <a href="#" data-i18n="dashboardCertificates">Certificats</a>
+          <a href="#" data-i18n="dashboardProfile">Profil</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <div>
+            <span class="section-label" data-i18n="dashboardWelcome">Bienvenue</span>
+            <h1 data-i18n="dashboardLearnerName">Bonjour, Clara</h1>
+          </div>
+          <a href="index.html" class="btn btn-outline" data-i18n="dashboardBack">Retour au site</a>
+        </header>
+
+        <section class="stat-grid">
+          <article class="card stat-card"><h3>3</h3><p data-i18n="dashboardStatsBookings">Formations réservées</p></article>
+          <article class="card stat-card"><h3>2</h3><p data-i18n="dashboardStatsMessages">Messages non lus</p></article>
+          <article class="card stat-card"><h3>1</h3><p data-i18n="dashboardStatsCertificates">Certificat disponible</p></article>
+        </section>
+
+        <section class="card dashboard-section">
+          <div class="section-heading">
+            <div><span class="section-label" data-i18n="dashboardUpcoming">Prochaines séances</span><h2 data-i18n="dashboardUpcomingTitle">Vos réservations à venir</h2></div>
+          </div>
+          <div class="reservation-list">
+            <div class="reservation-item"><div><strong>IA générative pour débutants</strong><p>Institut Formatech • 18 août</p></div><span class="pill" data-i18n="statusConfirmed">Confirmée</span></div>
+            <div class="reservation-item"><div><strong>Anglais professionnel</strong><p>Centre AlphaLangues • 25 août</p></div><span class="pill" data-i18n="statusPending">À payer</span></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

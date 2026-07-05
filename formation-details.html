@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageFormationTitle">Fiche formation | SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">SkillBridge</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html" data-i18n="navHome">Accueil</a>
+          <a href="recherche.html" class="active" data-i18n="navCourses">Formations</a>
+          <a href="chat.html" data-i18n="navMessages">Messages</a>
+          <a href="connexion.html" data-i18n="navLogin">Connexion</a>
+          <div class="nav-tools">
+            <label class="lang-switch"><select id="language-select"><option value="fr">FR</option><option value="en">EN</option><option value="ar">عربي</option></select></label>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le mode sombre">☀️</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container detail-page">
+      <section class="detail-gallery reveal">
+        <img src="https://placehold.co/900x520/png?text=Formation+IA" alt="Galerie formation" />
+        <div class="gallery-thumbs">
+          <img src="https://placehold.co/220x140/png?text=Atelier+1" alt="Miniature 1" />
+          <img src="https://placehold.co/220x140/png?text=Atelier+2" alt="Miniature 2" />
+          <img src="https://placehold.co/220x140/png?text=Atelier+3" alt="Miniature 3" />
+        </div>
+      </section>
+
+      <section class="detail-content">
+        <div class="detail-head reveal">
+          <span class="section-label" data-i18n="formationBadge">Formation intensive</span>
+          <h1>IA générative pour débutants</h1>
+          <p data-i18n="formationDescription">Un programme pratique pour comprendre les outils d’IA générative, créer des prompts efficaces et automatiser des tâches simples.</p>
+          <div class="meta-row"><span>⭐ 4.9 • 132 avis</span><span>Institut Formatech</span><span>Tunis</span></div>
+        </div>
+
+        <div class="card detail-info reveal">
+          <h2 data-i18n="formationAbout">À propos</h2>
+          <p data-i18n="formationAboutText">Cette formation allie théorie, ateliers et cas concrets. À l’issue de la session, vous recevrez un certificat de participation.</p>
+          <ul class="feature-list">
+            <li data-i18n="featureOne">6 séances de 2h</li>
+            <li data-i18n="featureTwo">Supports téléchargeables</li>
+            <li data-i18n="featureThree">Projet final guidé</li>
+          </ul>
+        </div>
+
+        <div class="card reviews-section reveal">
+          <h2 data-i18n="reviewsTitle">Avis clients</h2>
+          <div class="review-item"><strong>Rania A.</strong><p data-i18n="reviewOne">“Très structuré et très utile pour démarrer, surtout pour les débutants.”</p></div>
+          <div class="review-item"><strong>Houcine M.</strong><p data-i18n="reviewTwo">“Le formateur est excellent et les exemples sont très concrets.”</p></div>
+        </div>
+      </section>
+
+      <aside class="booking-card card reveal">
+        <h2 data-i18n="bookingTitle">Réserver</h2>
+        <div class="price">260 DT</div>
+        <p data-i18n="bookingAvailability">Disponible à partir du 18 août</p>
+        <ul class="availability-list">
+          <li>18 août • 09:00</li>
+          <li>25 août • 09:00</li>
+          <li>01 sept. • 09:00</li>
+        </ul>
+        <div class="card-actions">
+          <button class="favorite-btn" type="button" data-favorite-id="detail-ia" data-favorite-title="IA générative pour débutants" aria-pressed="false">♡</button>
+          <button class="compare-btn" type="button" data-compare-id="detail-ia" data-compare-title="IA générative pour débutants" aria-pressed="false">⚖</button>
+        </div>
+        <a href="paiement.html" class="btn btn-primary full-width" data-i18n="bookButton">Réserver</a>
+      </aside>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

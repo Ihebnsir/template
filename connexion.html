@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageLoginTitle">Connexion | SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="auth-page">
+      <div class="auth-card card reveal">
+        <a class="brand" href="index.html">SkillBridge</a>
+        <h1 data-i18n="authLoginTitle">Connexion</h1>
+        <p data-i18n="authLoginText">Accédez à votre espace SkillBridge.</p>
+        <form class="auth-form">
+          <label for="email" data-i18n="authEmail">Email</label>
+          <input id="email" type="email" placeholder="vous@example.com" />
+          <label for="password" data-i18n="authPassword">Mot de passe</label>
+          <input id="password" type="password" placeholder="••••••••" />
+          <label class="role-choice"><input type="radio" name="role" checked /> <span data-i18n="authLearner">Apprenant</span></label>
+          <label class="role-choice"><input type="radio" name="role" /> <span data-i18n="authCenter">Centre de formation</span></label>
+          <button class="btn btn-primary full-width" type="submit" data-i18n="authLoginButton">Se connecter</button>
+        </form>
+        <p class="auth-footer"><span data-i18n="authNoAccount">Pas encore de compte ?</span> <a href="inscription.html" data-i18n="authCreateAccount">Créer un compte</a></p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageCenterTitle">Centre de formation | SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">SkillBridge</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html" data-i18n="navHome">Accueil</a>
+          <a href="recherche.html" data-i18n="navCourses">Formations</a>
+          <a href="chat.html" data-i18n="navMessages">Messages</a>
+          <a href="connexion.html" data-i18n="navLogin">Connexion</a>
+          <div class="nav-tools">
+            <label class="lang-switch"><select id="language-select"><option value="fr">FR</option><option value="en">EN</option><option value="ar">عربي</option></select></label>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le mode sombre">☀️</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container center-page">
+      <section class="card hero-center reveal">
+        <img src="https://placehold.co/1200x360/png?text=Institut+Formatech" alt="Institut Formatech" />
+        <div class="center-hero-content">
+          <span class="section-label" data-i18n="centerBadge">Centre partenaire</span>
+          <h1>Institut Formatech <span class="verified-badge" title="Centre validé par l’équipe SkillBridge">✓ <span class="tooltip">Centre vérifié</span></span></h1>
+          <p>Tunis • 4.9⭐ • <span data-i18n="centerDescription">Centre reconnu pour ses formations pratiques en bureautique et développement.</span></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <div><span class="section-label" data-i18n="centerPrograms">Toutes les formations</span><h2 data-i18n="centerProgramsTitle">Programmes proposés par ce centre</h2></div>
+        </div>
+        <div class="card-grid">
+          <article class="card course-card reveal">
+            <img src="https://placehold.co/600x320/png?text=Excel+Advance" alt="Excel avancé" />
+            <div class="card-content">
+              <div class="card-meta"><span data-i18n="catOffice">Bureautique</span><span>4 semaines</span></div>
+              <h3>Excel avancé & automatisation</h3>
+              <p>Débutant • 18 places disponibles</p>
+              <p>Découvrez les tableaux croisés dynamiques, macros et automatisations simples.</p>
+              <div class="card-footer"><strong>180 DT</strong><a href="formation-details.html" class="text-link" data-i18n="details">Détails</a></div>
+            </div>
+          </article>
+          <article class="card course-card reveal">
+            <img src="https://placehold.co/600x320/png?text=Web+Design" alt="HTML CSS" />
+            <div class="card-content">
+              <div class="card-meta"><span data-i18n="catTech">Informatique</span><span>6 semaines</span></div>
+              <h3>HTML, CSS & Bootstrap</h3>
+              <p>Débutant • 12 places disponibles</p>
+              <p>Construisez des interfaces modernes et responsive avec les bonnes pratiques.</p>
+              <div class="card-footer"><strong>220 DT</strong><a href="formation-details.html" class="text-link" data-i18n="details">Détails</a></div>
+            </div>
+          </article>
+          <article class="card course-card reveal">
+            <img src="https://placehold.co/600x320/png?text=Communication" alt="Communication" />
+            <div class="card-content">
+              <div class="card-meta"><span data-i18n="catLangues">Langues</span><span>3 semaines</span></div>
+              <h3>Communication professionnelle</h3>
+              <p>Intermédiaire • 10 places disponibles</p>
+              <p>Renforcez votre expression orale et votre impact lors de présentations en entreprise.</p>
+              <div class="card-footer"><strong>160 DT</strong><a href="formation-details.html" class="text-link" data-i18n="details">Détails</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

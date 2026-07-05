@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageChatTitle">Messagerie | SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">SkillBridge</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html" data-i18n="navHome">Accueil</a>
+          <a href="recherche.html" data-i18n="navCourses">Formations</a>
+          <a href="chat.html" class="active" data-i18n="navMessages">Messages</a>
+          <a href="connexion.html" data-i18n="navLogin">Connexion</a>
+          <div class="nav-tools">
+            <label class="lang-switch"><select id="language-select"><option value="fr">FR</option><option value="en">EN</option><option value="ar">عربي</option></select></label>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le mode sombre">☀️</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container chat-shell">
+      <aside class="chat-sidebar card reveal">
+        <div class="chat-sidebar-header"><h2 data-i18n="chatTitle">Messages</h2><a href="#" class="text-link" data-i18n="chatNew">+ Nouveau</a></div>
+        <div class="conversation-item active"><strong>Institut Formatech</strong><p data-i18n="chatMessageOne">Votre réservation est confirmée.</p></div>
+        <div class="conversation-item"><strong>Centre AlphaLangues</strong><p data-i18n="chatMessageTwo">Les horaires seront envoyés demain.</p></div>
+        <div class="conversation-item"><strong>Académie SkillPro</strong><p data-i18n="chatMessageThree">Merci, nous vous recontacterons très vite.</p></div>
+      </aside>
+
+      <section class="chat-window card reveal">
+        <div class="chat-header"><h3>Institut Formatech</h3><span class="pill" data-i18n="chatOnline">En ligne</span></div>
+        <div class="chat-body">
+          <div class="message incoming" data-i18n="chatIncomingOne">Bonjour Clara, votre place est réservée pour la séance du 18 août.</div>
+          <div class="message outgoing" data-i18n="chatOutgoingOne">Parfait, merci. Est-ce qu’un support sera envoyé à l’avance ?</div>
+          <div class="message incoming" data-i18n="chatIncomingTwo">Oui, vous le recevrez par email 48h avant.</div>
+        </div>
+        <form class="chat-input">
+          <input type="text" placeholder="Écrivez votre message..." data-i18n-placeholder="chatInputPlaceholder" />
+          <button class="btn btn-primary" type="submit" data-i18n="chatSend">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageHomeTitle">SkillBridge | Plateforme tunisienne de formation</title>
+    <meta name="description" content="SkillBridge connecte les apprenants tunisiens aux meilleurs centres de formation partout en Tunisie." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">SkillBridge</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="index.html" class="active" data-i18n="navHome">Accueil</a>
+          <a href="recherche.html" data-i18n="navCourses">Formations</a>
+          <a href="#how-it-works" data-i18n="navHow">Comment ça marche</a>
+          <a href="connexion.html" data-i18n="navLogin">Connexion</a>
+          <div class="nav-tools">
+            <label class="lang-switch" aria-label="Sélecteur de langue">
+              <select id="language-select">
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+                <option value="ar">عربي</option>
+              </select>
+            </label>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Basculer le mode sombre">☀️</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="badge" data-i18n="heroBadge">Plateforme d’apprentissage locale</span>
+            <h1 data-i18n="heroTitle">Apprenez, progressez et débloquez votre futur en Tunisie.</h1>
+            <p data-i18n="heroText">Retrouvez des formations certifiantes près de chez vous, réservez facilement et avancez au rythme qui vous convient.</p>
+            <form class="hero-search">
+              <div>
+                <label for="keyword" data-i18n="searchKeyword">Mot-clé</label>
+                <input id="keyword" type="text" placeholder="Ex. Excel, IA, anglais" data-i18n-placeholder="searchKeywordPlaceholder" />
+              </div>
+              <div>
+                <label for="wilaya" data-i18n="searchWilaya">Wilaya</label>
+                <select id="wilaya">
+                  <option value="" data-i18n="wilayaAny">Toutes les wilayas</option>
+                  <option>Tunis</option>
+                  <option>Ariana</option>
+                  <option>Ben Arous</option>
+                  <option>Manouba</option>
+                  <option>Nabeul</option>
+                  <option>Zaghouan</option>
+                  <option>Bizerte</option>
+                  <option>Béja</option>
+                  <option>Jendouba</option>
+                  <option>Le Kef</option>
+                  <option>Siliana</option>
+                  <option>Sousse</option>
+                  <option>Monastir</option>
+                  <option>Mahdia</option>
+                  <option>Sfax</option>
+                  <option>Kairouan</option>
+                  <option>Kasserine</option>
+                  <option>Sidi Bouzid</option>
+                  <option>Gabès</option>
+                  <option>Médenine</option>
+                  <option>Tataouine</option>
+                  <option>Gafsa</option>
+                  <option>Tozeur</option>
+                  <option>Kébili</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" type="submit" data-i18n="searchButton">Rechercher</button>
+            </form>
+            <div class="hero-stats">
+              <div>
+                <strong>4.9/5</strong>
+                <span data-i18n="statRating">Note moyenne</span>
+              </div>
+              <div>
+                <strong>8k+</strong>
+                <span data-i18n="statLearners">Apprenants actifs</span>
+              </div>
+              <div>
+                <strong>180+</strong>
+                <span data-i18n="statCenters">Centres partenaires</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card reveal">
+            <img src="https://placehold.co/720x520/png?text=SkillBridge+Tunisia" alt="Illustration de formation tunisienne" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-label" data-i18n="sectionTrends">Formations tendances</span>
+              <h2 data-i18n="trendsTitle">Les formations les plus demandées</h2>
+            </div>
+            <a href="recherche.html" class="text-link" data-i18n="viewAll">Voir tout</a>
+          </div>
+          <div class="card-grid">
+            <article class="card course-card reveal">
+              <img src="https://placehold.co/600x360/png?text=Excel+Tunisie" alt="Formation Excel" />
+              <div class="card-content">
+                <div class="card-meta"><span data-i18n="catOffice">Bureautique</span><span>⭐ 4.9</span></div>
+                <h3 data-i18n="courseExcelTitle">Excel & automatisation</h3>
+                <p data-i18n="courseExcelCenter">Institut Formatech • Tunis</p>
+                <div class="card-actions">
+                  <button class="favorite-btn" type="button" data-favorite-id="excel" data-favorite-title="Excel & automatisation" aria-pressed="false">♡</button>
+                  <button class="compare-btn" type="button" data-compare-id="excel" data-compare-title="Excel & automatisation" aria-pressed="false">⚖</button>
+                </div>
+                <div class="card-footer"><strong>180 DT</strong><a href="formation-details.html" class="text-link" data-i18n="details">Détails</a></div>
+              </div>
+            </article>
+            <article class="card course-card reveal">
+              <img src="https://placehold.co/600x360/png?text=IA+Tunisia" alt="Formation IA" />
+              <div class="card-content">
+                <div class="card-meta"><span data-i18n="catTech">Informatique</span><span>⭐ 4.8</span></div>
+                <h3 data-i18n="courseAiTitle">IA générative pour débutants</h3>
+                <p data-i18n="courseAiCenter">Centre AlphaLangues • Sfax</p>
+                <div class="card-actions">
+                  <button class="favorite-btn" type="button" data-favorite-id="ia" data-favorite-title="IA générative pour débutants" aria-pressed="false">♡</button>
+                  <button class="compare-btn" type="button" data-compare-id="ia" data-compare-title="IA générative pour débutants" aria-pressed="false">⚖</button>
+                </div>
+                <div class="card-footer"><strong>260 DT</strong><a href="formation-details.html" class="text-link" data-i18n="details">Détails</a></div>
+              </div>
+            </article>
+            <article class="card course-card reveal">
+              <img src="https://placehold.co/600x360/png?text=Anglais+Sousse" alt="Formation anglais" />
+              <div class="card-content">
+                <div class="card-meta"><span data-i18n="catLangues">Langues</span><span>⭐ 5.0</span></div>
+                <h3 data-i18n="courseEnTitle">Anglais professionnel</h3>
+                <p data-i18n="courseEnCenter">Centre AlphaLangues • Sousse</p>
+                <div class="card-actions">
+                  <button class="favorite-btn" type="button" data-favorite-id="anglais" data-favorite-title="Anglais professionnel" aria-pressed="false">♡</button>
+                  <button class="compare-btn" type="button" data-compare-id="anglais" data-compare-title="Anglais professionnel" aria-pressed="false">⚖</button>
+                </div>
+                <div class="card-footer"><strong>210 DT</strong><a href="formation-details.html" class="text-link" data-i18n="details">Détails</a></div>
+              </div>
+            </article>
+            <article class="card course-card reveal">
+              <img src="https://placehold.co/600x360/png?text=Design+Monastir" alt="Formation design" />
+              <div class="card-content">
+                <div class="card-meta"><span data-i18n="catDesign">Design</span><span>⭐ 4.7</span></div>
+                <h3 data-i18n="courseDesignTitle">UI/UX Design Essentials</h3>
+                <p data-i18n="courseDesignCenter">Studio Pixel • Monastir</p>
+                <div class="card-actions">
+                  <button class="favorite-btn" type="button" data-favorite-id="design" data-favorite-title="UI/UX Design Essentials" aria-pressed="false">♡</button>
+                  <button class="compare-btn" type="button" data-compare-id="design" data-compare-title="UI/UX Design Essentials" aria-pressed="false">⚖</button>
+                </div>
+                <div class="card-footer"><strong>230 DT</strong><a href="formation-details.html" class="text-link" data-i18n="details">Détails</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-label" data-i18n="sectionCenters">Centres populaires par région</span>
+              <h2 data-i18n="centersTitle">Des centres de confiance partout en Tunisie</h2>
+            </div>
+          </div>
+          <div class="card-grid">
+            <article class="card center-card reveal">
+              <img src="https://placehold.co/600x220/png?text=Institut+Formatech" alt="Institut Formatech" />
+              <div class="card-content">
+                <h3>Institut Formatech <span class="verified-badge" title="Centre validé par l’équipe SkillBridge">✓ <span class="tooltip">Centre vérifié</span></span></h3>
+                <p>Tunis • 4.9⭐</p>
+                <a href="centre-details.html" class="text-link" data-i18n="visitCenter">Visiter le centre</a>
+              </div>
+            </article>
+            <article class="card center-card reveal">
+              <img src="https://placehold.co/600x220/png?text=Centre+AlphaLangues" alt="Centre AlphaLangues" />
+              <div class="card-content">
+                <h3>Centre AlphaLangues</h3>
+                <p>Sousse • 4.8⭐</p>
+                <a href="centre-details.html" class="text-link" data-i18n="visitCenter">Visiter le centre</a>
+              </div>
+            </article>
+            <article class="card center-card reveal">
+              <img src="https://placehold.co/600x220/png?text=Acad%C3%A9mie+SkillPro" alt="Académie SkillPro" />
+              <div class="card-content">
+                <h3>Académie SkillPro Sfax <span class="verified-badge" title="Centre validé par l’équipe SkillBridge">✓ <span class="tooltip">Centre vérifié</span></span></h3>
+                <p>Sfax • 4.7⭐</p>
+                <a href="centre-details.html" class="text-link" data-i18n="visitCenter">Visiter le centre</a>
+              </div>
+            </article>
+            <article class="card center-card reveal">
+              <img src="https://placehold.co/600x220/png?text=Formation+Plus" alt="Formation Plus" />
+              <div class="card-content">
+                <h3>Formation Plus Sousse</h3>
+                <p>Sousse • 4.6⭐</p>
+                <a href="centre-details.html" class="text-link" data-i18n="visitCenter">Visiter le centre</a>
+              </div>
+            </article>
+            <article class="card center-card reveal">
+              <img src="https://placehold.co/600x220/png?text=Studio+Pixel" alt="Studio Pixel" />
+              <div class="card-content">
+                <h3>Studio Pixel <span class="verified-badge" title="Centre validé par l’équipe SkillBridge">✓ <span class="tooltip">Centre vérifié</span></span></h3>
+                <p>Monastir • 4.8⭐</p>
+                <a href="centre-details.html" class="text-link" data-i18n="visitCenter">Visiter le centre</a>
+              </div>
+            </article>
+            <article class="card center-card reveal">
+              <img src="https://placehold.co/600x220/png?text=Centre+Nour" alt="Centre Nour" />
+              <div class="card-content">
+                <h3>Centre Nour</h3>
+                <p>Kairouan • 4.5⭐</p>
+                <a href="centre-details.html" class="text-link" data-i18n="visitCenter">Visiter le centre</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how-it-works">
+        <div class="container">
+          <div class="section-heading centered">
+            <div>
+              <span class="section-label" data-i18n="sectionHow">Comment ça marche</span>
+              <h2 data-i18n="howTitle">Un parcours simple en 3 étapes</h2>
+            </div>
+          </div>
+          <div class="steps-grid">
+            <article class="card step-card reveal">
+              <div class="step-number">1</div>
+              <h3 data-i18n="stepSearch">Rechercher</h3>
+              <p data-i18n="stepSearchText">Trouvez une formation par mot-clé, wilaya, niveau ou budget.</p>
+            </article>
+            <article class="card step-card reveal">
+              <div class="step-number">2</div>
+              <h3 data-i18n="stepBook">Réserver</h3>
+              <p data-i18n="stepBookText">Consultez les disponibilités, réservez et payez de façon sécurisée.</p>
+            </article>
+            <article class="card step-card reveal">
+              <div class="step-number">3</div>
+              <h3 data-i18n="stepLearn">Se former</h3>
+              <p data-i18n="stepLearnText">Accédez à votre espace, échangez en direct et obtenez votre certificat.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-label" data-i18n="sectionCategories">Catégories</span>
+              <h2 data-i18n="categoriesTitle">Choisissez votre prochaine spécialisation</h2>
+            </div>
+          </div>
+          <div class="category-grid">
+            <article class="card category-card reveal"><div class="icon">💻</div><h3 data-i18n="catTech">Informatique</h3><p data-i18n="catTechText">Développement, IA, cybersécurité.</p></article>
+            <article class="card category-card reveal"><div class="icon">🗣️</div><h3 data-i18n="catLangues">Langues</h3><p data-i18n="catLanguesText">Anglais, arabe, communication.</p></article>
+            <article class="card category-card reveal"><div class="icon">🛠️</div><h3 data-i18n="catCraft">Artisanat</h3><p data-i18n="catCraftText">Couture, ébénisterie, maintenance.</p></article>
+            <article class="card category-card reveal"><div class="icon">🏃</div><h3 data-i18n="catSport">Sport</h3><p data-i18n="catSportText">Fitness, yoga, coaching sportif.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading centered">
+            <div>
+              <span class="section-label" data-i18n="sectionTestimonials">Témoignages</span>
+              <h2 data-i18n="testimonialsTitle">Ce que disent nos apprenants</h2>
+            </div>
+          </div>
+          <div class="testimonial-grid">
+            <article class="card testimonial-card reveal">
+              <p data-i18n="testimonialOne">“J’ai trouvé une formation de qualité à Sfax en quelques jours. Le parcours est fluide et la plateforme est très rassurante.”</p>
+              <div class="author"><strong>Salma H.</strong><span data-i18n="testimonialOneRole">Apprenant en IA</span></div>
+            </article>
+            <article class="card testimonial-card reveal">
+              <p data-i18n="testimonialTwo">“Le chat intégré m’a permis de clarifier mes questions avant même de réserver.”</p>
+              <div class="author"><strong>Yassine B.</strong><span data-i18n="testimonialTwoRole">Apprenant en langues</span></div>
+            </article>
+            <article class="card testimonial-card reveal">
+              <p data-i18n="testimonialThree">“Un vrai gain de temps pour comparer plusieurs centres et payer en quelques clics.”</p>
+              <div class="author"><strong>Meriem K.</strong><span data-i18n="testimonialThreeRole">Apprenant en design</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="index.html">SkillBridge</a>
+          <p data-i18n="footerText">La plateforme tunisienne qui relie apprentissage, centres et opportunités.</p>
+        </div>
+        <div>
+          <h3 data-i18n="footerExplore">Explorer</h3>
+          <ul>
+            <li><a href="recherche.html" data-i18n="footerCourses">Formations</a></li>
+            <li><a href="#how-it-works" data-i18n="footerHow">Comment ça marche</a></li>
+            <li><a href="inscription.html" data-i18n="footerSignup">Créer un compte</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footerContact">Contact</h3>
+          <ul>
+            <li><a href="mailto:hello@skillbridge.tn">hello@skillbridge.tn</a></li>
+            <li><a href="tel:+21671000000">+216 71 000 000</a></li>
+            <li data-i18n="footerLocation">Tunis, Tunisie</li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footerSocial">Réseaux</h3>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">X</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
